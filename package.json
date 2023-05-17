@@ -6,7 +6,7 @@
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "scripts": {
-    "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js --bundleConfigAsCjs",
+    "build": "npm run clean && rollup -c rollup.config.js --bundleConfigAsCjs",
     "postinstall": "npm run build",
     "clean": "rimraf ./dist",
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
